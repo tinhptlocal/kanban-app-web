@@ -1,6 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KANBAN APP
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). It is a chat application that allows users to register, log in, and chat in real-time.
+
+## Features
+
+- User Authentication (Login, Register, Logout)
+- Real-time using Socket.io
+- Google OAuth Integration
+- Form Validation with Yup
+- State Management with React Context and React Query
+- Tailwind CSS for styling
 
 ## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/kanban-app-web.git
+   cd kanban-app-web
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Create a `.env.local` file in the root directory and add your environment variables:
+
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:3001
+   ```
+
+### Running the Development Server
 
 First, run the development server:
 
@@ -16,9 +59,36 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+### Running in Production Mode
+
+To run the application in production mode:
+
+```bash
+npm run start
+# or
+yarn start
+```
+
+## Project Structure
+
+```plaintext
+
+```
+
+### Key Directories and Files
+
 
 ## Learn More
 
@@ -34,5 +104,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# kanban-app-web
-# kanban-app-web
